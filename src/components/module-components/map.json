@@ -1,0 +1,6 @@
+{
+  "mmt_single-row-image": "/src/components/module-components/single-row-image/index.js",
+  "mmt_double-row-image": "/src/components/module-components/double-row-image/index.js",
+  "mmt_popup": "/src/components/module-components/popup/index.js",
+  "mmt_swiper": "/src/components/module-components/swiper/index.js"
+}

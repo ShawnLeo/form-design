@@ -1,0 +1,33 @@
+import formDecorate from './views/form-decorate/decorate.vue';
+import formPreview from './views/form-decorate/preview.vue';
+
+import * as formUtils from './utils/utils';
+import {layoutComponents, formComponents} from './utils/components';
+
+const components = {
+	formDecorate,
+	formPreview
+};
+
+import formComponentsMap from './components/form-components';
+import formConfigMap from './components/form-config';
+
+let baseComponents = {...formComponentsMap, ...formConfigMap};
+
+
+const install = function(Vue) {
+	Object.keys(baseComponents).forEach(key => {
+		Vue.component(key, baseComponents[key]);
+	});
+};
+
+
+let FormDesign = {
+	install,
+	...components,
+	formUtils,
+	layoutComponents, // 布局组件
+	formComponents // 表单组件
+};
+
+export default FormDesign;

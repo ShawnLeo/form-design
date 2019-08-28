@@ -1,0 +1,88 @@
+{
+  "name": "mmt-form-design",
+  "version": "0.1.0",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build:components": "webpack --config build/webpack.config.js",
+    "build:components:webapp": "webpack --config build/webpack.config.webapp.js"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "iview": "^3.4.1",
+    "vue": "^2.6.10",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.0.3",
+    "vuedraggable": "^2.20.0",
+    "vuex": "^3.0.1",
+    "vux": "^2.8.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "clean-webpack-plugin": "^2.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.5.21",
+    "vue-loader": "^14.2.2",
+    "vux-loader": "^1.2.9",
+    "webpack-cli": "^3.3.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "arrow-parens": 0,
+      "generator-star-spacing": 0,
+      "semi": [
+        "error",
+        "always"
+      ],
+      "indent": 0,
+      "space-before-function-paren": 0,
+      "no-useless-escape": 0,
+      "no-console": "off",
+      "eslint-disable-next-line": 0,
+      "vue/require-prop-type-constructor": 0
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "eslintIgnore": [
+    "dist/**/*.js"
+  ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "description": "form design",
+  "main": "dist/form-design.min.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "form",
+    "design"
+  ],
+  "author": "Shawn",
+  "license": "ISC"
+}
