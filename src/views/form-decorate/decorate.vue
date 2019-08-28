@@ -75,7 +75,7 @@
 							</Row>
 
 							<!--明细子表-->
-							<Row v-else-if="item.info.type === 'form-table'" class="layout-row" :key="index" :class="item.info.key">
+							<Row v-else-if="item.info.type === 'form-table'" class="layout-row" :key="index" :class="[item.info.key, {'sublist-checked': item.checked}]">
 
 								<div class="draggable-table" :style="formTableWidth(item.info.columns)"
 									v-for="(col, cindex) in item.info.columns"
@@ -98,7 +98,7 @@
 
 								<div class="drag-widget">
 
-									<Button size="small" icon="md-edit" style="margin-right: 2px;">编辑</Button>
+									<Button size="small" icon="md-edit" style="margin-right: 2px;" @click="selectItem(formData.gridList, item, index)">编辑</Button>
 									<Button size="small" icon="md-add" style="margin-right: 2px;"
 										@click="addColumn(formData.gridList, index)">添加列
 									</Button>
@@ -450,6 +450,10 @@
 									min-height: 98px;
 								}
 							}
+						}
+						.sublist-checked{
+							box-sizing: border-box;
+							border: 1px dashed #BB121A;
 						}
 					}
 					.sortable-drag-custom {

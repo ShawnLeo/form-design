@@ -107,7 +107,11 @@
 						window.localStorage.setItem("form-data", JSON.stringify(this.formData.info));
 						this.$Message.success('保存成功!');
 					} else {
-						this.$Message.error(errorItem.config.label + "为必填项");
+						if (errorItem.info.type === 'form-table') {
+							this.$Message.error("请添加子表信息");
+						} else {
+							this.$Message.error(errorItem.config.label + "为必填项");
+						}
 					}
 				});
 			},

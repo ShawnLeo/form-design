@@ -86,6 +86,10 @@ export function formValicdate(formData, callback) {
 				break;
 			case 'form-table':
 				// let cdata = ;
+				if (formItem.config.require && formItem.cdata.length < 1) {
+					callback(false, formItem);
+					return ;
+				}
 				for (let j = 0; j < formItem.info.columns.length; j++) {
 					let colItem = formItem.info.columns[j];
 					let colListItem = colItem.list[0];

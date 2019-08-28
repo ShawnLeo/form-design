@@ -8,6 +8,7 @@ import checkbox from './checkbox/checkbox.vue';
 import radio from './radio/radio.vue';
 import divider from './divider/divider.vue';
 import label from './label/label.vue';
+import formTable from './form-table/form-table.vue';
 
 // 所有组件
 const formConfigComponentsMap = {
@@ -20,7 +21,8 @@ const formConfigComponentsMap = {
 	[checkbox.name]: checkbox,
 	[radio.name]: radio,
 	[divider.name]: divider,
-	[label.name]: label
+	[label.name]: label,
+	[formTable.name]: formTable
 };
 
 export default formConfigComponentsMap;

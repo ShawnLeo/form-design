@@ -54,7 +54,10 @@ export const layoutComponents = [{
 		'url': '',
 		'icon': ''
 	},
-	'config': {},
+	'config': {
+		"title": "明细子表",
+		"require": false
+	},
 	'cdata': []
 }];
 // 表单控件
