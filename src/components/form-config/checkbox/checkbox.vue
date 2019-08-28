@@ -41,10 +41,7 @@
 	</div>
 </template>
 <script>
-	import Checkbox from "../../../../node_modules/iview/src/components/checkbox/checkbox.vue";
-
 	export default {
-		components: {Checkbox},
 		name: 'mmt-checkbox-config',
 		props: {
 			config: Object,

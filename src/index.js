@@ -20,7 +20,6 @@ const install = function(Vue) {
 	});
 };
 
-
 /*工具*/
 import * as formUtils from './utils/utils';
 import {layoutComponents, formComponents} from './utils/components';

@@ -20,11 +20,6 @@
 	</div>
 </template>
 <script>
-	import {quillEditor} from 'vue-quill-editor';
-
-	import 'quill/dist/quill.core.css';
-	import 'quill/dist/quill.snow.css';
-
 	export default {
 		name: 'mmt-label-config',
 		data() {
@@ -39,9 +34,6 @@
 					}
 				}
 			};
-		},
-		components: {
-			quillEditor
 		},
 		props: {
 			config: Object,
