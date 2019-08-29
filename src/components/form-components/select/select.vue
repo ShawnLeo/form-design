@@ -8,7 +8,7 @@
 		<div class="widget-content" :style="positionStyles">
 			<!--<Input :element-id="id" v-model="currentValue" :placeholder="`${placeholder}`" :maxlength="maxLength"-->
 			<!--@input="handleInput" :style="widgetWidth"/>-->
-			<Select v-model="currentValue" @on-change="handleInput" :style="widgetWidth">
+			<Select v-model="currentValue" @on-change="handleInput" :style="widgetWidth" :disabled="config.disabled">
 				<Option :value="item.value" v-for="(item, index) in config.options" :key="index">{{item.label}}</Option>
 			</Select>
 			<input type="hidden" :id="id" :value="currentValue"/>

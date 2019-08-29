@@ -11,7 +11,7 @@
 			<!--<Select :element-id="id" :id="id" v-model="currentValue"  @on-change="handleInput" :style="widgetWidth">-->
 			<!--<Option :value="item.value" v-for="(item, index) in config.options" :key="index">{{item.label}}</Option>-->
 			<!--</Select>-->
-			<CheckboxGroup v-model="currentValue"  @on-change="handleInput">
+			<CheckboxGroup v-model="currentValue"  @on-change="handleInput" :disabled="config.disabled">
 				<Checkbox :label="item.value" v-for="(item, index) in config.options" :key="index">{{item.label}}</Checkbox>
 			</CheckboxGroup>
 

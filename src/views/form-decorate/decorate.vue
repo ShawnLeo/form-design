@@ -320,10 +320,15 @@
 			},
 			// 选中组件
 			selectItem(list, item, index) {
-				this.closeConfigDialogAndUncheckAll();
-				this.currentItem = item;
-				this.configTabValue = 'component';
-				this.$set(list[index], 'checked', true);
+				if (list[index].checked) {
+					this.closeConfigDialogAndUncheckAll();
+					this.configTabValue = 'form';
+				} else {
+					this.closeConfigDialogAndUncheckAll();
+					this.currentItem = item;
+					this.configTabValue = 'component';
+					this.$set(list[index], 'checked', true);
+				}
 			},
 			// 关闭配置框取消选中组件
 			closeConfigDialogAndUncheckAll() {

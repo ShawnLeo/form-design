@@ -6,7 +6,7 @@
 		</label>
 
 		<div class="widget-content" :style="positionStyles">
-			<Input :element-id="id" v-model="currentValue" :placeholder="`${placeholder}`"
+			<Input :element-id="id" v-model="currentValue" :placeholder="`${placeholder}`" :disabled="config.disabled"
 				:maxlength="maxLength" @input="handleInput" :style="widgetWidth"/>
 		</div>
 

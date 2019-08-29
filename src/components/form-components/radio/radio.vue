@@ -1,17 +1,13 @@
 <template>
-	<div class="row">
+	<div class="row mmt-radio">
+
 		<label class="widget-title" v-show="config.vshow">
 			<span >{{config.label}} </span>
 			<span class="c-danger" v-if="this.config.require">*</span>
 		</label>
 
 		<div class="widget-content" :style="positionStyles">
-			<!--<Input :element-id="id" v-model="currentValue" :placeholder="`${placeholder}`" :maxlength="maxLength"-->
-			<!--@input="handleInput" :style="widgetWidth"/>-->
-			<!--<Select :element-id="id" :id="id" v-model="currentValue"  @on-change="handleInput" :style="widgetWidth">-->
-				<!--<Option :value="item.value" v-for="(item, index) in config.options" :key="index">{{item.label}}</Option>-->
-			<!--</Select>-->
-			<RadioGroup v-model="currentValue"  @on-change="handleInput">
+			<RadioGroup v-model="currentValue"  @on-change="handleInput" :disabled="config.disabled">
 				<Radio :label="item.value" v-for="(item, index) in config.options" :key="index">{{item.label}}</Radio>
 			</RadioGroup>
 			<input type="hidden" :id="id" :value="currentValue"/>
@@ -63,7 +59,8 @@
 	.row {
 		width: 100%;
 	}
-	.widget-title{
+
+	.mmt-radio .widget-title{
 		width: 95px;
 		float: left;
 		margin-top: 5px;
@@ -76,15 +73,15 @@
 		word-wrap: break-word;
 		word-break: break-all;
 	}
-	.c-danger {
+	.mmt-radio .c-danger {
 		color: #fb6e52;
 	}
 
-	.widget-content {
+	.mmt-radio .widget-content {
 		position: relative;
 		min-height: 30px;
 	}
-	.ivu-radio-group{
+	.mmt-radio .ivu-radio-group{
 		font-size: 19px;
 	}
 </style>

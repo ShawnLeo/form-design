@@ -6,10 +6,10 @@
 		</label>
 
 		<div class="widget-content" :style="positionStyles">
-			<!--<Input :element-id="id" v-model="currentValue" :placeholder="`${placeholder}`" :maxlength="maxLength"-->
-			<!--@input="handleInput" :style="widgetWidth"/>-->
+
 			<DatePicker :element-id="id" :type="type" :start-date="startDate" placement="bottom-end" :format="config.format"
-				v-model="currentValue" :placeholder="placeholder" @on-change="handleInput" :style="widgetWidth"></DatePicker>
+				v-model="currentValue" :disabled="config.disabled" :placeholder="placeholder" @on-change="handleInput"
+				:style="widgetWidth"></DatePicker>
 
 		</div>
 

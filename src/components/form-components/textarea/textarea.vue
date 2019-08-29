@@ -6,8 +6,8 @@
 		</label>
 
 		<div class="widget-content" :style="positionStyles">
-			<Input :element-id="id"  type="textarea" v-model="currentValue" :placeholder="`${placeholder}`" :maxlength="maxLength"
-				@input="handleInput" :style="widgetWidth"/>
+			<Input :element-id="id"  type="textarea" v-model="currentValue" :disabled="config.disabled"
+				:placeholder="`${placeholder}`" :maxlength="maxLength" @input="handleInput" :style="widgetWidth"/>
 		</div>
 
 	</div>
