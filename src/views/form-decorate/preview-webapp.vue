@@ -32,7 +32,7 @@
 
 			<template v-else-if="item.info.type === 'form-table'">
 				<div class="component-row table-row" :class="item.info.key" :key="ii">
-					<div class="tab1">
+					<div class="tab1" :style="{width: item.config.disabled ? '100%' : '80%'}">
 						<x-table :cell-bordered="false" style="background-color:#fff;">
 							<thead>
 							<tr>
@@ -50,7 +50,7 @@
 							</tbody>
 						</x-table>
 					</div>
-					<div class="tab2">
+					<div class="tab2" v-if="!item.config.disabled">
 						<x-table :cell-bordered="false" style="background-color:#fff;">
 							<thead>
 							<tr>

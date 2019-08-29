@@ -1,7 +1,7 @@
 <template>
 	<group>
 		<datetime :title="title" v-model="currentValue" :placeholder="`${placeholder}`" :format="format"
-			@on-confirm="handleInput" :disabled="config.disabled"></datetime>
+			@on-confirm="handleInput" :readonly="config.disabled"></datetime>
 	</group>
 </template>
 
