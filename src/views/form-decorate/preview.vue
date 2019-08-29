@@ -32,10 +32,10 @@
 
 			<template v-else-if="item.info.type === 'form-table'">
 				<div class="component-row table-row" :class="item.info.key" :key="ii">
-					<Table :columns="getColumn(item.info.columns, item.cdata)" :data="item.cdata">
+					<Table :columns="getColumn(item.info.columns, item.cdata, item.config)" :data="item.cdata">
 
 						<template slot-scope="{ row, index }" :slot="column.id"
-							v-for="(column, fi) in getColumn(item.info.columns, item.cdata)">
+							v-for="(column, fi) in getColumn(item.info.columns, item.cdata, item.config)">
 							<component class="common-component" :is="column.mmtKey"
 								:id="column.id + '-' + index" :cdata="row[column.id]" :key="fi"
 								v-if="column.mmtKey" @on-change="tableComponentValueChange(ii, column.id, index, fi)"
@@ -73,7 +73,7 @@
 			'mmt-form-head': formHead
 		},
 		methods: {
-			getColumn(columns, cdata) {
+			getColumn(columns, cdata, config) {
 				let tableColumns = [];
 				columns.forEach((col, index) => {
 					let item = col.list[0];
@@ -107,30 +107,33 @@
 						});
 					}
 				});
-				tableColumns.push({
-					title: '操作',
-					slot: 'action',
-					align: 'center',
+
+				if (config && !config.disabled) {
+					tableColumns.push({
+						title: '操作',
+						slot: 'action',
+						align: 'center',
 //					fixed: 'right',
-					width: '100',
-					renderHeader: (h) => {
-						return h('div', [
-							h('Button', {
-								props: {
-									shape: 'circle',
-									size: 'small',
-									icon: 'md-add'
-								},
-								on: {
-									click: () => {
-										cdata.push({});
+						width: '100',
+						renderHeader: (h) => {
+							return h('div', [
+								h('Button', {
+									props: {
+										shape: 'circle',
+										size: 'small',
+										icon: 'md-add'
+									},
+									on: {
+										click: () => {
+											cdata.push({});
+										}
 									}
-								}
-							})
-						]);
-					}
-				});
-				console.log(this.formData);
+								})
+							]);
+						}
+					});
+				}
+//				console.log(this.formData);
 				return tableColumns;
 			},
 			getRowData(row, column) {
