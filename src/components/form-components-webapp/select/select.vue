@@ -1,7 +1,7 @@
 <template>
 	<group>
 		<selector v-model="currentValue" :title="title" :options="options" :placeholder="`${placeholder}`"
-			@on-change="handleInput"></selector>
+			@on-change="handleInput"  :readonly="config.disabled"></selector>
 	</group>
 </template>
 

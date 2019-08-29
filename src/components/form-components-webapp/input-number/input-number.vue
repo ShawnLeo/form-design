@@ -1,7 +1,7 @@
 <template>
 		<group>
-			<x-number :title="title" v-model="currentValue" :fillable="true"
-				:max="max" :min="min" :step="step" @on-change="handleInput" button-style="round"></x-number>
+			<x-number :title="title" v-model="currentValue" :fillable="true" :max="max" :min="min"
+				:step="step" @on-change="handleInput" button-style="round" :readonly="config.disabled"></x-number>
 		</group>
 </template>
 

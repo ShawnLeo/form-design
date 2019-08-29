@@ -1,7 +1,7 @@
 <template>
 		<group>
 			<x-input :title="title" v-model="currentValue" :placeholder="`${placeholder}`" :max="maxLength"
-				@on-change="handleInput"></x-input>
+				@on-change="handleInput" :disabled="config.disabled"></x-input>
 		</group>
 </template>
 

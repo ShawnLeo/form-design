@@ -1,6 +1,6 @@
 <template>
 	<group :title="title">
-		<checklist v-model="currentValue"  :options="options" @on-change="handleInput"></checklist>
+		<checklist v-model="currentValue"  :options="options" @on-change="handleInput" :disabled="config.disabled"></checklist>
 	</group>
 </template>
 

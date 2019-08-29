@@ -1,6 +1,6 @@
 <template>
 	<group :title="title">
-		<radio v-model="currentValue" :options="options" @on-change="handleInput"></radio>
+		<radio v-model="currentValue" :options="options" @on-change="handleInput" :disabled="config.disabled"></radio>
 	</group>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
 	<group :title="title" >
 		<x-textarea v-model="currentValue" :placeholder="`${placeholder}`" :max="maxLength"
-			@on-change="handleInput"></x-textarea>
+			@on-change="handleInput"  :disabled="config.disabled"></x-textarea>
 	</group>
 </template>
 
