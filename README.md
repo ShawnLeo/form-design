@@ -1,6 +1,8 @@
 ### 表单设计器
 
-​	基于Vue + iView + Vux开发的表单设计器。
+​	基于Vue + iView + Vux开发的表单设计器。 
+
+​	预览地址： https://shawnleo.github.io/form-design/docs
 
 ##### 1. 表单设计器
 
@@ -9,7 +11,6 @@
 <img src="https://raw.githubusercontent.com/ShawnLeo/form-design/master/src/assets/images/form-design.png" alt="表单设计器" style="width:80%;" />
 
 <div  style="text-align: center;font-size:12px;">图1-1 表单设计器</div>
-
 ##### 2. 组件列表
 
 ​	组件列表分为：布局组件和表单组件。
@@ -19,11 +20,9 @@
 <img src="https://raw.githubusercontent.com/ShawnLeo/form-design/master/src/assets/images/preview-pc.jpg" alt="pc预览" style="width:80%;" />
 
 <div  style="text-align: center;font-size:12px;">图3-1 pc预览</div>
-
 <img src="https://raw.githubusercontent.com/ShawnLeo/form-design/master/src/assets/images/preview-webapp.jpg" alt="webapp预览" style="width:80%;" />
 
 <div  style="text-align: center;font-size:12px;">图3-2 webapp预览</div>
-
 ##### 4. 组件设计规范（可以自定义表单组件）
 
 样例：
