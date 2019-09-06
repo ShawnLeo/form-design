@@ -7,8 +7,10 @@
 		</label>
 
 		<div class="widget-content" :style="positionStyles">
-			<RadioGroup v-model="currentValue"  @on-change="handleInput" :disabled="config.disabled">
-				<Radio :label="item.value" v-for="(item, index) in config.options" :key="index">{{item.label}}</Radio>
+			<RadioGroup v-model="currentValue"  @on-change="handleInput">
+				<Radio :label="item.value" v-for="(item, index) in config.options" :key="index" :disabled="config.disabled">
+					{{item.label}}
+				</Radio>
 			</RadioGroup>
 			<input type="hidden" :id="id" :value="currentValue"/>
 		</div>

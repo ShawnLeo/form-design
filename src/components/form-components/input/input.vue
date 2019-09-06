@@ -80,5 +80,4 @@
 		min-height: 30px;
 	}
 
-
 </style>

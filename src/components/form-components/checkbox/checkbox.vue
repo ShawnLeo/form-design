@@ -6,15 +6,11 @@
 		</label>
 
 		<div class="widget-content" :style="positionStyles">
-			<!--<Input :element-id="id" v-model="currentValue" :placeholder="`${placeholder}`" :maxlength="maxLength"-->
-			<!--@input="handleInput" :style="widgetWidth"/>-->
-			<!--<Select :element-id="id" :id="id" v-model="currentValue"  @on-change="handleInput" :style="widgetWidth">-->
-			<!--<Option :value="item.value" v-for="(item, index) in config.options" :key="index">{{item.label}}</Option>-->
-			<!--</Select>-->
-			<CheckboxGroup v-model="currentValue"  @on-change="handleInput" :disabled="config.disabled">
-				<Checkbox :label="item.value" v-for="(item, index) in config.options" :key="index">{{item.label}}</Checkbox>
+			<CheckboxGroup v-model="currentValue"  @on-change="handleInput">
+				<Checkbox :label="item.value" v-for="(item, index) in config.options" :key="index" :disabled="config.disabled">
+					{{item.label}}
+				</Checkbox>
 			</CheckboxGroup>
-
 			<input type="hidden" :id="id" :value="currentValue"/>
 		</div>
 

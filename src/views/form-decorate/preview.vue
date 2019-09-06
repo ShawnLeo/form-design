@@ -227,6 +227,20 @@
 		}
 	}
 
+
+	/****预览样式****/
+	.ivu-select-selected-value {
+		color: #000000;
+	}
+	.ivu-input-disabled{
+		color: #000000 !important;
+	}
+	.ivu-input-number-disabled{
+		.ivu-input-number-input{
+			color: #000000;
+		}
+	}
+
 	/****特殊组件****/
 
 </style>
