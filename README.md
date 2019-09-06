@@ -6,24 +6,37 @@
 
 ##### 1. 表单设计器
 
+
+
 ​		通过**拖拽**左侧组件完成页面设计，单击组件在右侧属性面板修改组件属性。
 
 <img src="https://raw.githubusercontent.com/ShawnLeo/form-design/master/src/assets/images/form-design.png" alt="表单设计器" style="width:80%;" />
 
-<div  style="text-align: center;font-size:12px;">图1-1 表单设计器</div>
+​																			图1-1 表单设计器
+
 ##### 2. 组件列表
+
+
 
 ​	组件列表分为：布局组件和表单组件。
 
 ##### 3. 预览
 
+
+
 <img src="https://raw.githubusercontent.com/ShawnLeo/form-design/master/src/assets/images/preview-pc.jpg" alt="pc预览" style="width:80%;" />
 
-<div  style="text-align: center;font-size:12px;">图3-1 pc预览</div>
+​																			图3-1 pc预览
+
 <img src="https://raw.githubusercontent.com/ShawnLeo/form-design/master/src/assets/images/preview-webapp.jpg" alt="webapp预览" style="width:80%;" />
 
-<div  style="text-align: center;font-size:12px;">图3-2 webapp预览</div>
-##### 4. 组件设计规范（可以自定义表单组件）
+​																			图3-2 webapp预览
+
+##### 4. 组件设计规范
+
+
+
+> * 可以自定义开发表单组件
 
 样例：
 
