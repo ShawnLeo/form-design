@@ -2,7 +2,7 @@
 
 ​	基于Vue + iView + Vux开发的表单设计器。 
 
-​	预览地址： https://shawnleo.github.io/form-design/docs
+​	预览地址： https://shawnleo.github.io/form-design
 
 ##### 1. 表单设计器
 
