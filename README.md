@@ -6,7 +6,7 @@
 
 ​		通过**拖拽**左侧组件完成页面设计，单击组件在右侧属性面板修改组件属性。
 
-<img src="src/assets/images/form-design.png" alt="表单设计器" style="width:80%;" />
+<img src="https://raw.githubusercontent.com/ShawnLeo/form-design/master/src/assets/images/form-design.png" alt="表单设计器" style="width:80%;" />
 
 <p  style="text-align: center;font-size:12px;">图1-1 表单设计器</p>
 
@@ -16,11 +16,11 @@
 
 ##### 3. 预览
 
-<img src="src/assets/images/preview-pc.jpg" alt="pc预览" style="width:80%;" />
+<img src="https://raw.githubusercontent.com/ShawnLeo/form-design/master/src/assets/images/preview-pc.jpg" alt="pc预览" style="width:80%;" />
 
 <p  style="text-align: center;font-size:12px;">图3-1 pc预览</p>
 
-<img src="src/assets/images/preview-webapp.jpg" alt="webapp预览" style="width:80%;" />
+<img src="https://raw.githubusercontent.com/ShawnLeo/form-design/master/src/assets/images/preview-webapp.jpg" alt="webapp预览" style="width:80%;" />
 
 <p  style="text-align: center;font-size:12px;">图3-2 webapp预览</p>
 
@@ -30,21 +30,21 @@
 
 ```json
 {
-	'info': { // 固定格式
-		'name': '文本框',
-		'key': 'mmt-input', // key值勿重复
-		'type': 'form-item', // 'form-item'-表单项  'layout'-布局类型
-		'url': '', // 远程组件地址
-		'icon': '' // 组件图标
-	},
-	'config': {  // 配置项根据组件自定义
-		"label": "文本框",
-		"vshow": true,
-		"require": false,
-		"tsize": 'medium',
-		"maxLength": 80
-	},
-	'cdata': ''
+    'info': { // 固定格式
+        'name': '文本框',
+        'key': 'mmt-input', // key值勿重复
+        'type': 'form-item', // 'form-item'-表单项  'layout'-布局类型
+        'url': '', // 远程组件地址
+        'icon': '' // 组件图标
+    },
+    'config': {  // 配置项根据组件自定义
+        "label": "文本框",
+        "vshow": true,
+        "require": false,
+        "tsize": 'medium',
+        "maxLength": 80
+    },
+    'cdata': ''
 }
 ```
 
