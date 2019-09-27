@@ -137,14 +137,15 @@
 				return tableColumns;
 			},
 			getRowData(row, column) {
-				console.log(column);
 				return row[column.id];
 			},
-			addRow(cdata, index) {
-				cdata.splice(index, 0, {});
+			addRow(item, index) {
+				item.cdata.splice(index, 0, {});
+				this.$emit('add-row', item);
 			},
 			delRow(cdata, index) {
 				cdata.splice(index, 1);
+				this.$emit('del-row', item);
 			},
 			componentValueChange(e, index) {
 				this.formData.gridList[index].cdata = e;

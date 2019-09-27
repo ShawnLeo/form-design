@@ -74,9 +74,13 @@ pc预览:
 
 
 
-> ​	*注意： pc端需要依赖 iview， 移动端需要依赖 vux
+> ​	*注意： pc端需要依赖 iview， 移动端需要依赖 vux（记得安装配置 vux-loader）
 
 1. 安装 mmt-form-design
+
+   ```
+   npm install mmt-form-design -S
+   ```
 
    ```
    import FormDesign from 'mmt-form-design';
